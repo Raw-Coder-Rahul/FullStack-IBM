@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #E6F7FF;
+    display: flex;
+    flex-direction: column;
+}
+
+
+header {
+    background-color: #00BFFF;
+    padding: 1rem 2rem;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h2 {
+    color: #028A0F;
+}
+
+
+nav {
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav a {
+    color: white;
+    font-size: 1.1rem;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease-in-out;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: #1E90FF;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    text-align: center;
+    padding: 1rem;
+}
+
+main h2 {
+    margin-bottom: 1rem;
+}
+
+.box-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+
+.magicbox {
+    width: 200px;
+    height: 200px;
+    perspective: 1000px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.magicbox:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+}
+
+.magicbox-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s ease-in-out;
+}
+
+.magicbox.clicked .magicbox-inner {
+    transform: rotateY(180deg);
+}
+
+.magicbox-front,
+.magicbox-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 1rem;
+}
+
+.magicbox-front h3 {
+    color: #028A0F;
+}
+
+.magicbox-front p {
+    color: black;
+    margin-top: 0.5rem;
+}
+
+.magicbox-back {
+    transform: rotateY(180deg);
+    background-size: cover;
+    background-position: center;
+}
+
+footer {
+    background-color: #00BFFF;
+    color: white;
+    padding: 0.8rem;
+    text-align: center;
+    font-size: 1.2rem;
+}

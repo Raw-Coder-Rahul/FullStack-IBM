@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magic Box</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Magic Boxes</h1>
+        <nav>
+            <a class="active" href="#home">Home</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+        </nav>
+    </header>
+    
+    <main>
+        <h2>Do Magic</h2>
+        <div class="box-container">
+            <div class="magicbox" onclick="flipBox(this)">
+                <div class="magicbox-inner">
+                    <div class="magicbox-front">
+                        <h3>Box 1</h3>
+                        <p>Hover to reveal magic!</p>
+                    </div>
+                    <div class="magicbox-back" style="background-image: url('https://www.dndspeak.com/wp-content/uploads/2021/04/DemonTraits-1.jpg');"></div>
+                </div>
+            </div>
+    
+            <div class="magicbox" onclick="flipBox(this)">
+                <div class="magicbox-inner">
+                    <div class="magicbox-front">
+                        <h3>Box 2</h3>
+                        <p>Hover to reveal magic!</p>
+                    </div>
+                    <div class="magicbox-back" style="background-image: url('https://thepreachersword.com/wp-content/uploads/2015/02/light-god-is.jpg');"></div>
+                </div>
+            </div>
+    
+            <div class="magicbox" onclick="flipBox(this)">
+                <div class="magicbox-inner">
+                    <div class="magicbox-front">
+                        <h3>Box 3</h3>
+                        <p>Hover to reveal magic!</p>
+                    </div>
+                    <div class="magicbox-back" style="background-image: url('https://img.freepik.com/premium-photo/half-angel-half-devil-illustration-t-shirt-design_1230721-2034.jpg');"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Magic Boxes. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function flipBox(box) {
+            box.classList.toggle("clicked");
+        }
+    </script>
+</body>
+</html>
