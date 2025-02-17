@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        p {
+            background-color: teal;
+            color: aliceblue;
+            text-align: center;
+        }
+        .para3 {
+            background-color: blue;
+            text-align: justify;
+        }
+
+        .para4 {
+            background-color: black;
+        }
+
+        #para {
+            background-color: blueviolet;
+        }
+
+        /*decendent selector*/
+        #parent1 p {
+            background-color: aquamarine;
+        }
+
+        /*child selector*/
+        #parent2>p {
+            background-color: aqua;
+        }
+
+        /*Adjasent Selector*/
+
+        /* #parent3>:nth-child(1)+h1{
+            background-color: red;
+        }*/
+
+        #parent3>:nth-child(1)~p{
+            background-color: red;
+        }
+
+        #parent3>.child-para~h1{
+            background-color: brown;
+        }
+
+        #parent3>div>#myid~h2{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>I am Paragraph 1.</p>
+    </div>
+    <div>
+        <p class="para1">I am Paragraph 2.</p>
+    </div>
+    <div>
+        <p class="para3">I am Paragraph 3.</p>
+    </div>
+    <div>
+        <p class="para3">I am Paragraph 4.</p>
+    </div>
+    <div>
+        <p id="para" class="para4">I am Paragraph</p>
+    </div>
+
+    <div id="parent1">
+        <p >I am Paragraph.</p>
+        <div>
+            <p>Child para1</p>
+            <p>Child para2</p>
+            <div>
+                <p>Grand Child 1</p>
+                <p>Grand Child 2</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="parent2">
+        <p>I am Paragraph. </p>
+        <div>
+            <p>Child para1</p>
+            <p>Child para2</p>
+            <div>
+                <p>Grand Child 1</p>
+                <p>Grand Child 2</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="parent3">
+        <p class="child-para">I am Paragraph. </p>
+        <h1>Heading</h1>
+        <h1>Heading</h1>
+        <p>Paragraph 2</p>
+        <p>Paragraph 3</p>
+        <div>
+            <p id="myid">Paragraph nested 1</p>
+            <h2>Heading 2</h2>
+            <p>Paragraph nested 2</p>
+            <h2>Heading 2</h2>
+        </div>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+    
+</body>
+</html>
