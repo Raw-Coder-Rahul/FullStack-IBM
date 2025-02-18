@@ -1,0 +1,96 @@
+*{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#parent{
+    width: 80%;
+    height: 400px;
+    border: 1px solid gray;
+    background-color: aquamarine;
+    /* top: 100px; */
+    /* position: relative; */
+}
+#child {
+    width: 80%;
+    height: 200px;
+    border: 1px solid red;
+    background-color: brown;
+    top: 50px;
+    bottom: 0;
+    right: -20px;
+}
+
+.clause {
+    background-color: blue;
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    border-radius: 50%;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+#box, #box1 {
+    height: 300px;
+    width: 200px;
+    border: 1px solid gray;
+    background-color: bisque;
+    position: fixed;
+    display: none;
+}
+
+#box1 {
+    bottom: 180px;
+    left: 10px;
+}
+
+/* Hover and click effect */
+.clause:hover ~ #box,
+.clause:active ~ #box1 {
+    display: block;
+    bottom: 180px;
+    left: 10px;
+    background-color: lightgreen;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+button{
+    background-color: black;
+    color: goldenrod;
+    width: 50%;
+    height: 50px;
+    border-radius: 2%;
+    font-size: larger;
+    cursor: pointer;
+    border: none;
+}
+
+.form{
+    width: 30%;
+    height: 300px;
+    border: 1px solid gray;
+    margin: auto;
+    border-radius: 10px;
+    text-align: center;
+}
+
+input{
+    width: 85%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+input:focus{
+    background-color: bisque;
+}
+
+p::after{
+    content: "HELLO , www.google.com"
+}
+
+p::before {
+    content: url('https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png');
+}
