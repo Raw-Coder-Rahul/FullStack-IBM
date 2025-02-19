@@ -1,0 +1,97 @@
+* {
+    font-family: 'Inter', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f0f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 900px;
+    width: 100%;
+    background: #fff;
+    border-radius: 20px;
+    padding: 50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo-box {
+    max-width: 50%;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.brand-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #002970;
+    margin: 20px 0;
+}
+
+.brand-para {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.brand-paytm a {
+    display: inline-block;
+    background-color: #002970;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px 24px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.brand-paytm a:hover {
+    background-color: #0053a6;
+}
+
+.app-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.app-links img {
+    height: 50px;
+    cursor: pointer;
+}
+
+.style img {
+    width: 300px;
+    border-radius: 15px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo-box {
+        max-width: 100%;
+    }
+
+    .style img {
+        margin-top: 20px;
+        width: 100%;
+    }
+}
