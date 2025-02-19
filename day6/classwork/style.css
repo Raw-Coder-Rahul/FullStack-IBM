@@ -40,14 +40,16 @@
     display: none;
 }
 
-#box1 {
-    bottom: 180px;
-    left: 10px;
+#parent:hover + #box1 {
+    display: block;
+    cursor: pointer;
+    left: 100px;
 }
+
 
 /* Hover and click effect */
 .clause:hover ~ #box,
-.clause:active ~ #box1 {
+.clause:active ~ #box {
     display: block;
     bottom: 180px;
     left: 10px;
