@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Calculator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(140deg, #ff3366, #00eaff);
+            font-family: 'Poppins', sans-serif;
+        }
+        h1 {
+            text-align: center;
+            color: #ffffff;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+        }
+        #main {
+            width: 400px;
+            padding: 25px;
+            border-radius: 20px;
+            background: rgba(0, 0, 0, 0.85);
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 12px;
+            box-shadow: 0px 6px 20px rgba(255, 255, 255, 0.3);
+        }
+        #keyinput {
+            grid-column: span 4;
+        }
+        input[type=text] {
+            width: 100%;
+            padding: 25px;
+            border: none;
+            border-radius: 12px;
+            background: #222;
+            color: #00eaff;
+            font-size: 28px;
+            text-align: right;
+            outline: none;
+            box-shadow: inset 0px 0px 10px rgba(255, 255, 255, 0.2);
+        }
+        #main > div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 65px;
+            border-radius: 12px;
+            font-size: 24px;
+            font-weight: bold;
+            color: #ffffff;
+            background: linear-gradient(145deg, #333, #444);
+            cursor: pointer;
+            transition: transform 0.2s ease, background 0.3s;
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+        }
+        #main > div:hover {
+            background: #00eaff;
+            color: #000;
+            transform: scale(1.1);
+        }
+        #main .equal {
+            background: #ff3366;
+            color: white;
+            box-shadow: 4px 4px 10px rgba(255, 51, 102, 0.6);
+        }
+        #main .equal:hover {
+            background: #cc2955;
+        }
+        #main > div:active {
+            transform: scale(0.9);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Modern Calculator</h1>
+        <div id="main">
+            <div id="keyinput">
+                <input type="text" placeholder="0" readonly>
+            </div>
+            <div>%</div>
+            <div>CE</div>
+            <div>C</div>
+            <div><i class="fa-solid fa-delete-left"></i></div>
+            <div>1/x</div>
+            <div>x<sup>2</sup></div>
+            <div>&#8730;</div>
+            <div>&#247;</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>&times;</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>&ndash;</div>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>+</div>
+            <div>+/-</div>
+            <div>0</div>
+            <div>.</div>
+            <div class="equal">=</div>
+        </div>
+    </div>
+</body>
+</html>
