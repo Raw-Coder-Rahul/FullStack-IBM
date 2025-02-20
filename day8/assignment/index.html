@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Calculator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div>
+        <h1>Modern Calculator</h1>
+        <div id="main">
+            <nav id="keyinput">
+                <input type="text" placeholder="0" class="screen">
+            </nav>
+            <div class="button percent" onclick="percentage()">%</div>
+            <div class="button clear" onclick="clearScreen()">CE</div>
+            <div class="button clear" onclick="clearAll()">C</div>
+            <div class="button delete" onclick="last()"><i class="fa-solid fa-delete-left"></i></div>
+            <div class="button inv" onclick="inverse()">1/x</div>
+            <div class="button square" onclick="square()">x<sup>2</sup></div>
+            <div class="button root" onclick="squareroot()">&#8730;</div>
+            <div class="button" onclick="number(this)" key="/">&#247;</div>
+            <div class="button" onclick="number(this)" key="7">7</div>
+            <div class="button" onclick="number(this)" key="8">8</div>
+            <div class="button" onclick="number(this)" key="9">9</div>
+            <div class="button" onclick="number(this)" key="*">&times;</div>
+            <div class="button" onclick="number(this)" key="4">4</div>
+            <div class="button" onclick="number(this)" key="5">5</div>
+            <div class="button" onclick="number(this)" key="6">6</div>
+            <div class="button" onclick="number(this)" key="-">&ndash;</div>
+            <div class="button" onclick="number(this)" key="1">1</div>
+            <div class="button" onclick="number(this)" key="2">2</div>
+            <div class="button" onclick="number(this)" key="3">3</div>
+            <div class="button" onclick="number(this)" key="+">+</div>
+            <div class="button negative" onclick="negative()">+/-</div>
+            <div class="button" onclick="number(this)" key="0">0</div>
+            <div class="button" onclick="number(this)" key=".">.</div>
+            <div class="button equal" onclick="calculate()">=</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
