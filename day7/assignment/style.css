@@ -1,0 +1,77 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('https://w0.peakpx.com/wallpaper/8/1/HD-wallpaper-day-and-night-sun-luna-luminos-ryky-dragon-fantasy-moon-pink-blue.jpg') no-repeat center center/cover;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color: #fff;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+#main {
+    width: 400px;
+    padding: 25px;
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.85);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+#main>#keyinput {
+    display: flex;
+    grid-column: span 4;
+    margin: 15px 0;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 25px;
+    border: none;
+    border-radius: 12px;
+    background: #222;
+    color: #00eaff;
+    font-size: 28px;
+    text-align: right;
+    outline: none;
+}
+
+#main > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 65px;
+    border-radius: 12px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(145deg, #333, #444);
+    cursor: pointer;
+    transition: transform 0.2s ease, background 0.3s;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+#main > div:hover {
+    background: #00eaff;
+    color: #000;
+    transform: scale(1.1);
+}
+
+#main .equal {
+    background: #ff3366;
+    color: white;
+    box-shadow: 4px 4px 10px rgba(255, 51, 102, 0.6);
+}
+
+#main .equal:hover {
+    background: #cc2955;
+}
+
+#main > div:active {
+    transform: scale(0.9);
+}

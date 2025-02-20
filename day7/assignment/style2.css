@@ -1,0 +1,44 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('https://arsgoetiademons.com/cdn/shop/files/DemonAsmodeusArsGoetia.png?v=1703764064&width=1946');
+    background-size: cover;
+    margin: 0;
+}
+
+.keyboard {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.number-keys {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+.main-keys {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 10px;
+}
+
+.key {
+    background-color: #e0e0e0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+.key:hover {
+    background-color: #b0b0b0;
+    transform: translateY(-2px);
+}
