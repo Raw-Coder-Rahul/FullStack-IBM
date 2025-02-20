@@ -1,14 +1,14 @@
-function updateScreen(value) {
+function updateScreen(value){
     const screen = document.querySelector('.screen');
     screen.value = value;
 }
 
-function getScreenValue() {
+function getScreenValue(){
     const screen = document.querySelector('.screen');
     return screen.value;
 }
 
-function percentage() {
+function percentage(){
     let presentvalue = getScreenValue();
     if (presentvalue) {
         presentvalue = parseFloat(presentvalue) / 100;
@@ -16,15 +16,15 @@ function percentage() {
     }
 }
 
-function clearScreen() {
+function clearScreen(){
     updateScreen(0);
 }
 
-function clearAll() {
+function clearAll(){
     updateScreen('');
 }
 
-function last() {
+function last(){
     let presentvalue = getScreenValue();
     if (presentvalue.length > 0) {
         presentvalue = presentvalue.slice(0, -1);
@@ -32,7 +32,7 @@ function last() {
     }
 }
 
-function inverse() {
+function inverse(){
     let presentvalue = getScreenValue();
     if (presentvalue) {
         presentvalue = 1 / parseFloat(presentvalue);
@@ -40,7 +40,7 @@ function inverse() {
     }
 }
 
-function square() {
+function square(){
     let presentvalue = getScreenValue();
     if (presentvalue) {
         presentvalue = parseFloat(presentvalue) ** 2;
@@ -48,7 +48,7 @@ function square() {
     }
 }
 
-function squareroot() {
+function squareroot(){
     let presentvalue = getScreenValue();
     if (presentvalue) {
         presentvalue = Math.sqrt(parseFloat(presentvalue));
@@ -56,13 +56,13 @@ function squareroot() {
     }
 }
 
-function number(key) {
+function number(key){
     let keyType = key.getAttribute('key');
     let screen = document.querySelector('.screen');
     screen.value += keyType;
 }
 
-function negative() {
+function negative(){
     let presentvalue = getScreenValue();
     if (presentvalue) {
         presentvalue = parseFloat(presentvalue) * (-1);
@@ -70,7 +70,7 @@ function negative() {
     }
 }
 
-function calculate() {
+function calculate(){
     let presentvalue = getScreenValue();
     try {
         presentvalue = eval(presentvalue);
