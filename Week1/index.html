@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paytm Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-wrapper">
+            <a class="brand-logo" href="/"><img src="images/logo_new.svg" alt="Paytm Logo"></a>
+            <nav class="navigation">
+                <ul class="navigation-bar">
+                    <li class="menu-item">
+                        Ticket Booking
+                        <i class="fa fa-chevron-down" style="background-color:aliceblue;"></i>
+                        <ul class="submenu">
+                            <li>Movie Tickets</li>
+                            <li>Flight Tickets</li>
+                            <li>Train Tickets</li>
+                            <li>Bus Tickets</li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        Recharge & Bills
+                        <i class="fa fa-chevron-down" style="background-color:aliceblue;"></i>
+                        <ul class="submenu">
+                            <li>Mobile Recharge</li>
+                            <li>Electricity Bill</li>
+                            <li>DTH Recharge</li>
+                            <li>Municipal Bill</li>
+                            <li>Water Bill</li>
+                            <li>Gas & Cylinder</li>
+                            <li>Loan EMI</li>
+                            <li>Insurance Premium</li>
+                            <li>Challan</li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        Payment & Services
+                        <i class="fa fa-chevron-down" style="background-color:aliceblue;"></i>
+                        <ul class="submenu">
+                            <li>Payments</li>
+                            <li>Loan & Credit Cards</li>
+                            <li>Wealth</li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        Paytm for Business
+                        <i class="fa fa-chevron-down" style="background-color:aliceblue;"></i>
+                        <ul class="submenu">
+                            <li>Online Payments</li>
+                            <li>Offline Payments</li>
+                            <li>Business Software</li>
+                            <li>Business Lending</li>
+                            <li>Insurance</li>
+                            <li>For Developers - API</li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        Company
+                        <i class="fa fa-chevron-down" style="background-color:aliceblue;"></i>
+                        <ul class="submenu">
+                            <li>About</li>
+                            <li>Investor Relations</li>
+                            <li>Sustainability</li>
+                            <li>Blog</li>
+                            <li>Latest News</li>
+                            <li>Contact Us</li>
+                            <li>Customer Care</li>
+                            <li>Career</li>
+                            <li>CSR</li>
+                            <li>Terms & Conditions</li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="app-download">
+                <img src="images/downloadApp.svg" alt="Download App">Download App
+            </div>
+            <div class="sign-in">
+                <div class="user-profile">
+                    <img src="images/logoutImg.svg" alt="User ">
+                    <span title="Sign In">Sign In</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <div class="radio-group">
+                <input type="radio" id="oneWay" name="journeyType" class="radio-button" checked value="oneWay">
+                <label class="label" for="oneWay">One Way</label>
+            </div>
+            <div class="radio-group">
+                <input type="radio" name="journeyType" value="roundTrip" id="roundTrip">
+                <label class="label" for="roundTrip">Round Trip</label>
+            </div>
+            <div class="journey-details">
+                <div class="flight-info">
+                    <div class="flight-location" id="from">
+                        <span class="location-text">From</span>
+                        <span class="location-code" id="srcCode">Delhi (DEL)</span>
+                    </div>
+                    <img class="arrow-icon" src="https://pwebassets.paytm.com/frontendcommonweb/static/e5e744ba..png" alt="arrow">
+                    <div class="flight-location" id="to">
+                        <span class="location-text">To</span>
+                        <span class="location-code" id="destCode">Mumbai (BOM)</span>
+                    </div>
+                </div>
+                <div class="date-details">
+                    <div class="date-info">
+                        <span class="date-text">Depart</span>
+                        <span class="date-value" id="departureDate">Thu, 27 Feb 25</span>
+                    </div>
+                    <div class="return-info">
+                        <div class="return-label" id="saveMore">
+                            <span class="return-text">Return</span>
+                        </div>
+                        <div class="add-return">
+                            <span class="add-return-text" id="addReturn">Add Return</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="traveller-details">
+                    <div class="traveller-info" id="travellerClass">
+                        Passenger & Class
+                        <div class="traveller-summary">
+                            <span id="numPax" class="traveller-count">1 Traveller, Economy</span>
+                            <i class="traveller-icon"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="search-button">
+                    <button id="flightSearch" class="ripple-button">Search Flights</button>
+                </div>
+            </div>
+            <div class="special-fares">
+                <div class="fare-details"></div>
+                <div></div>
+            </div>
+            <div class="optional-fares">
+                <div class="optional-fare-item">
+                    <div>
+                        <div class="fare-title">Special Fares (optional)</div>
+                        <div class="extra-savings">
+                            <img src="https://pwebassets.paytm.com/frontendcommonweb/static/a6fdca89..png" alt="rupeeSymbolGreeenBg">
+                            <span>Extra Savings</span>
+                        </div>
+                    </div>
+                    <div role="button" tabindex="0" class="fare-option">
+                        <div class="option-title">Armed Forces</div>
+                        <div class="option-discount">Up to ₹600 off</div>
+                    </div>
+                    <div role="button" tabindex="0" class="fare-option">
+                        <div class="option-title">Student</div>
+                        <div class="option-discount">Extra Baggage</div>
+                    </div>
+                    <div role="button" tabindex="0" class="fare-option">
+                        <div class="option-title">Senior Citizen</div>
+                        <div class="option-discount">Up to ₹600 off</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Banner Section -->
+        <section class="banner-section">
+            <img src="images/b9191e67.svg" alt="Left Arrow" class="banner-arrow-left">
+            <img src="images/10903120897665220.avif" alt="Paytm Offer" class="banner-main-image">
+            <img src="images/6239586378108886.avif" alt="Paytm Offer" class="banner-main-image">
+            <img src="images/10903092620102442.avif" alt="Paytm Offer" class="banner-main-image">
+            <img src="images/b9191e67.svg" alt="Right Arrow" class="banner-arrow-right">
+        </section>
+
+        <!-- Recharge & Bill Payment Section -->
+        <section class="service-container">
+            <div class="service-card">
+                <h2>Recharges</h2>
+                <div class="service-items">
+                    <div class="service-item">
+                        <img src="images/1725624139422.avif" alt="Mobile Recharge">
+                        <span>Mobile Recharge</span>
+                    </div>
+                    <div class="service-item">
+                        <img src="images/1725624172567.png" alt="DTH Recharge">
+                        <span>DTH Recharge</span>
+                    </div>
+                    <div class="service-item">
+                        <img src="images/1725624207849.png" alt="FasTag Recharge">
+                        <span>FasTag Recharge</span>
+                    </div>
+                    <div class="service-item">
+                        <img src="images/1725624245350.avif" alt="View All">
+                        <span>View All</span>
+                    </div>
+                </div>
+                <a href="#">
+                    <img src="images/1732260479349.avif" alt="" class="offer-image">
+                </a>
+            </div>
+
+            <div class="service-card">
+                <h2>Bill Payments</h2>
+                <div class="service-items">
+                    <div class="service-item">
+                        <img src="images/1725624373019.avif" alt="Credit Card">
+                        <span>Credit Card Payment</span>
+                    </div>
+                    <div class="service-item">
+                        <img src="images/1725624413059.avif" alt="Electricity Bill">
+                        <span>Electricity Bill</span>
+                    </div>
+                    <div class="service-item">
+                        <img src="images/1725624449393.png" alt="Broadband Bill">
+                        <span>Broadband Bill</span>
+                    </div>
+                    <div class="service-item">
+                        <img src="images/1725624245350.avif" alt="View All">
+                        <span>View All</span>
+                    </div>
+                </div>
+                <a href="#">
+                    <img src="images/1732260510732.avif" alt="" class="offer-image">
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Paytm Clone. All Rights Reserved.</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
