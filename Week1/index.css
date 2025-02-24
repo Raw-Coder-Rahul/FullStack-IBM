@@ -475,7 +475,8 @@ label {
 }
 
 .service-card h2 {
-    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
     font-size: 20px;
     color: #000;
     font-weight: 600;
@@ -516,6 +517,72 @@ label {
 .offer-image{
     width: 100%;
     padding-top: 20px;
+}
+
+.second {
+    padding-top: 0px;
+}
+
+.money-container {
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #d3d3d3;
+    margin: 0px 255px 0px 110px;
+    border-radius: 15px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    word-wrap: break-word;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    max-width: 83.3%;
+    margin-top: 50px;
+}
+
+.money-logo {
+    max-width: 50%;
+    box-sizing: border-box;
+}
+
+.logo-img-money {
+    height: 50px;
+}
+
+.logo-img-money>img {
+    max-width: 200px;
+    max-height: 75px;
+    margin-bottom: 12px;
+}
+
+.money-brand-title {
+    font-size: 46px;
+    font-weight: 700;
+    color: black;
+    margin: 20px 0;
+}
+
+.money-brand-para {
+    font-size: 18px;
+    color: black;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: x-large;
+}
+
+.money-brand-img {
+    max-width: 50%;
+    box-sizing: border-box;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.money-brand-img>img {
+    max-width: 500px;
+    height: 100%;
+    object-fit: fill;
+    width: 100%;
 }
 
 footer {
