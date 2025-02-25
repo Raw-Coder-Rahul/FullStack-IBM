@@ -523,8 +523,8 @@ label {
     padding-top: 0px;
 }
 
-.money-container {
-    padding: 20px;
+.money-container, .bussiness-container {
+    padding: 40px 20px 140px 20px;
     background-color: #fff;
     border: 1px solid #d3d3d3;
     margin: 0px 255px 0px 110px;
@@ -540,29 +540,29 @@ label {
     margin-top: 50px;
 }
 
-.money-logo {
+.money-logo,.bussiness-logo {
     max-width: 50%;
     box-sizing: border-box;
 }
 
-.logo-img-money {
+.logo-img-money, .logo-img-bussiness {
     height: 50px;
 }
 
-.logo-img-money>img {
+.logo-img-money>img, .logo-img-bussiness>img {
     max-width: 200px;
     max-height: 75px;
-    margin-bottom: 12px;
+    margin-bottom: 50px;
 }
 
-.money-brand-title {
+.money-brand-title, .bussiness-brand-title {
     font-size: 46px;
     font-weight: 700;
     color: black;
     margin: 20px 0;
 }
 
-.money-brand-para {
+.money-brand-para, .bussiness-brand-para {
     font-size: 18px;
     color: black;
     line-height: 1.5;
@@ -575,7 +575,7 @@ label {
     max-width: 50%;
     box-sizing: border-box;
     border-radius: 15px;
-    padding: 20px;
+    padding: 40px;
 }
 
 .money-brand-img>img {
@@ -599,6 +599,7 @@ label {
     font-size: 18px;
     flex-wrap:nowrap;
     word-wrap:normal;
+    cursor: pointer;
 }
 
 .More span {
@@ -670,6 +671,7 @@ label {
     font-size: 18px;
     justify-content: flex-end;
     white-space: nowrap;
+    cursor: pointer;
 }
 
 .more span {
@@ -682,6 +684,7 @@ label {
 #icon_learn {
     font-size: 18px;
     color: #fff;
+    cursor: pointer;
 }
 
 .card-Insurance {
@@ -830,13 +833,61 @@ label {
     width: 100%;
 }
 
-
 footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 200px;
+    padding: 1.5rem 5rem;
+    font-size: larger;
+    color: rgb(97, 96, 96);
+    font-weight: 700;
+    gap: 30px;
+
+    div {
+        display: flex;
+        gap: 15px;
+        padding-left: 20px;
+
+        p {
+            margin: 5px;
+        }
+    }
+}
+
+footer>div::after {
+    content: "";
+    flex: 1 1;
+    border-bottom: 0.5px solid rgb(131, 130, 130);
+    position: relative;
+    bottom: 8px;
+    cursor: pointer;
+}
+
+.last {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.last .lastB {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    i {
+        border: 2px solid black;
+        border-radius: 50%;
+        background-color: black;
+        color: white;
+        padding: 7px;
+
+    }
+}
+
+#clone {
     background: #002970;
     color: white;
     text-align: center;
     padding: 10px;
-    margin-top: 30px;
-    position: relative;
-    top: 200px;
+    margin-top: 4px;
 }
