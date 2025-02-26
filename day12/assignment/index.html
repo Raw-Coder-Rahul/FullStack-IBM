@@ -3,10 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Management System</title>
+    <title>Movie Management System</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <h1>Day 12 Assignment</h1>
+    <div id="parent">
+        <h1>Welcome to the World Of Movies</h1>
+        <form action="" id="userform">
+            <p>
+                <label for="MovieName">Movie Name: <span aria-label="required">*</span></label>
+                <input type="text" name="MovieName" placeholder="Movie Name" id="name" required>
+            </p>
+            <p>
+                <label for="MovieDescription">Movie Description: <span aria-label="required">*</span></label>
+                <textarea name="MovieDescription" id="description" rows="8" cols="30" required></textarea>
+            </p>
+            <p>
+                <label for="year">Release Year: <span aria-label="required">*</span></label>
+                <input type="number" name="year" placeholder="Release Year" id="year" required>
+            </p>
+            <p>
+                <label for="IMDB">IMDB Rating: <span aria-label="required">*</span></label>
+                <input type="number" name="IMDB" placeholder="IMDB (0-10)" id="imdb" required>
+            </p>
+            <p>
+                <label for="genre">Genre: <span aria-label="required">*</span></label>
+                <input type="text" name="genre" id="genre" list="mySuggestion" required />
+                <datalist id="mySuggestion">
+                    <option>Action</option>
+                    <option>Comedy</option>
+                    <option>Drama</option>
+                    <option>Sci-Fi</option>
+                    <option>Horror</option>
+                </datalist>
+            </p>
+            <p>
+                <label for="poster">Movie Poster URL: <span aria-label="required">*</span></label>
+                <input type="url" name="poster" placeholder="URL" id="poster" required>
+            </p>
+            <button type="submit">Submit</button>
+            <a href="movie.html"><button type="button">View Movies</button></a>
+        </form>
+    </div>
+    <script src="index.js"></script>
 </body>
 </html>
-<script src="index.js"></script>

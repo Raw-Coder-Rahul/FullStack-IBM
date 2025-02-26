@@ -1,0 +1,84 @@
+body {
+    background-image: url("https://images2.alphacoders.com/135/1358516.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Times New Roman', Times, serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#parent {
+    height: 90vh;
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 60%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 1);
+    color: #fff;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    color: rgba(255, 165, 0, 0.4);
+    box-shadow: 0 0 5px rgba(255, 165, 0, 1);
+}
+
+h1:hover {
+    color: rgba(255, 165, 0, 1);
+    box-shadow: 0 0 5px rgba(255, 165, 0, 1);
+    cursor: pointer;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+input, textarea, select, button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input:focus, textarea:focus, select:focus {
+    outline: none;
+    background-color: rgba(224, 247, 250, 0.5);
+}
+
+button {
+    background-color: rgb(255, 165, 0, 0.3);
+    color: rgb(255, 255, 255);
+    box-shadow: 0 0 5px rgba(255, 165, 0, 1);
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: rgb(255, 140, 0);
+}
+
+a button {
+    width: auto;
+    padding: 10px 20px;
+    background-color: #666;
+    color: rgb(255, 255, 255, 1);
+    font-size: 1.2em;
+}
+
+a button:hover {
+    background-color: rgba(225, 42, 42, 0.8);
+    box-shadow: 0 0 5px rgba(255, 42, 42, 1);
+}

@@ -3,10 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Practice</title>
+    <title>Music Management System</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <h1>Day 11 Practice</h1>
+    <div id="parent">
+        <h1>Welcome to the World Of Music</h1>
+        <form action="" id="userform">
+            <p>
+                <label for="SongName">Song Name: <span aria-label="required">*</span></label>
+                <input type="text" name="SongName" placeholder="Song Name" id="name" required>
+            </p>
+            <p>
+                <label for="ArtistName">Artist Name: <span aria-label="required">*</span></label>
+                <input type="text" name="ArtistName" placeholder="Artist Name" id="artist" required>
+            </p>
+            <p>
+                <label for="AlbumName">Album Name: <span aria-label="required">*</span></label>
+                <input type="text" name="AlbumName" placeholder="Album Name" id="album" required>
+            </p>
+            <p>
+                <label for="ReleaseYear">Release Year: <span aria-label="required">*</span></label>
+                <input type="number" name="ReleaseYear" placeholder="Release Year" id="year" required>
+            </p>
+            <p>
+                <label for="Genre">Genre: <span aria-label="required">*</span></label>
+                <input type="text" name="Genre" id="genre" list="mySuggestion" required />
+                <datalist id="mySuggestion">
+                    <option>Pop</option>
+                    <option>Rock</option>
+                    <option>Jazz</option>
+                    <option>Classical</option>
+                    <option>Hip-Hop</option>
+                </datalist>
+            </p>
+            <p>
+                <label for="cover">Album Cover URL: <span aria-label="required">*</span></label>
+                <input type="url" name="cover" placeholder="URL" id="cover" required>
+            </p>
+            <button type="submit">Submit</button>
+            <button type="button" onclick="toggleMusicDetails()">View Songs</button>
+        </form>
+        <table id="musicDetails" style="display: none; width: 100%; margin-top: 20px;">
+            <thead>
+                <tr>
+                    <th>Song Name</th>
+                    <th>Artist Name</th>
+                    <th>Album Name</th>
+                    <th>Release Year</th>
+                    <th>Genre</th>
+                    <th>Album Cover</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+            </tbody>
+        </table>
+    </div>
+    <script src="index.js"></script>
 </body>
 </html>
-<script src="index.js"></script>

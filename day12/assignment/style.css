@@ -1,0 +1,83 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    color: #333;
+    background-image: url('https://wallpapercave.com/wp/wp9189463.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: rgba(231, 76, 60, 0.9);
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+form label {
+    font-size: x-large;
+    color: rgb(255, 255, 255, 0.8);
+}
+
+form input[type="search"] {
+    width: 70%;
+    padding: 10px;
+    border: 2px solid rgba(231, 76, 60, 0.7);
+    border-radius: 5px;
+    font-size: 1.2em;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    font-size: 1.2em;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    color: rgb(255, 255, 255, 0.8);
+}
+
+th {
+    background-color: rgba(231, 76, 60, 0.5);
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+.fa-trash {
+    cursor: pointer;
+    color: rgba(231, 76, 60, 0.5);
+}

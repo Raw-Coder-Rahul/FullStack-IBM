@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DataBase</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Movie Database</h1>
+        </header>
+        <form action="">
+            <p>
+                <label for="search">Search: </label>
+                <input id="search" name="search" type="search" placeholder="Write only movie name" oninput="filterMovies()" />
+            </p>
+        </form>
+        <table>
+            <thead>
+                <tr>
+                    <th>Movie Name</th>
+                    <th>Movie Description</th>
+                    <th>Release Year</th>
+                    <th>IMDb Rating</th>
+                    <th>Genre</th>
+                    <th>Movie Poster</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+            </tbody>
+        </table>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
