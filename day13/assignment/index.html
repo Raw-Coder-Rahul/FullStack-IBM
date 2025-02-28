@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple E-Commerce</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <header>
+    <h1>Product Listing</h1>
+    <button onclick="goToCart()">Go to Cart</button>
+  </header>
+  <div class="filter-sort">
+    <input type="text" id="searchBar" placeholder="Search products..." oninput="sortAndFilterProducts()">
+    <select id="sortOptions" onchange="sortAndFilterProducts()">
+      <option value="lowToHigh">Price: Low to High</option>
+      <option value="highToLow">Price: High to Low</option>
+    </select>
+    <select id="categoryFilter" onchange="sortAndFilterProducts()">
+      <option value="all">All Categories</option>
+      <option value="Electronics">Electronics</option>
+      <option value="Fashion">Fashion</option>
+      <option value="Accessories">Accessories</option>
+      <option value="Home & Kitchen">Home & Kitchen</option>
+    </select>
+  </div>
+  <div id="product-list"></div>
+  <script src="index.js"></script>
+</body>
+</html>
