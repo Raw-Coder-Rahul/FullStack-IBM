@@ -27,7 +27,7 @@ function displayCart() {
         <img src="${product.image}" alt="${product.name}">
         <p>${product.name}</p>
         <p>${product.category}</p>
-        <p>$${product.price}</p>
+        <p>₹${product.price}</p>
         <p>
           <button onclick="updateQuantity(${index}, -1)">-</button>
           ${product.quantity}

@@ -1,4 +1,21 @@
-const products = [
+// let arr = [4787,45,444,4524,
+//     41145,4,524,421
+//     ,471,7512,52,4512,1201,152,999,4754
+// ];
+
+// let n = arr.length;
+// for (let i = 1; i < n; i++) {
+//     for (let j = 0; j < n - 1 - i; j++) {   
+//         if (arr[j] > arr[j + 1]) {
+//             let temp = arr[j];
+//             arr[j] = arr[j + 1];
+//             arr[j + 1] = temp;
+//         }
+//     }
+// }
+// console.log(arr);
+
+let data = [
     {
       id: 1,
       name: "Wireless Bluetooth Headphones",
@@ -160,72 +177,54 @@ const products = [
       image: "https://bondy.shop/cdn/shop/products/07_Ava_fronttotal_750x.jpg?v=1653910682"
     }
 ]
-  
-function displayProducts(products) {
-    const productList = document.getElementById('product-list');
-    productList.innerHTML = '';
-    products.forEach(product => {
-      const productCard = document.createElement('div');
-      productCard.className = 'product-card';
-      productCard.innerHTML = `
-        <img src="${product.image}" alt="${product.name}">
-        <h3>${product.name}</h3>
-        <p>${product.category}</p>
-        <p>₹${product.price}</p>
-        <button data-id="${product.id}" class="add-to-cart-btn">Add to Cart</button>
-      `;
-      productList.appendChild(productCard);
+
+function showData(array) {
+
+    array.forEach((el, index) => {
+
+        let productBox = document.createElement("div");
+        productBox.className = "product-box";
+
+        let heading = document.createElement("h3");
+        heading.innerText = el.category;
+
+        let img = document.createElement("img");
+        img.src = el.image;
+
+        let name = document.createElement("p");
+        name.innerText = el.name;
+
+        let price = document.createElement("p");
+        price.innerText = el.price;
+
+        let rating = document.createElement("p");
+        rating.innerText = el.rating;
+
+        let button = document.createElement("button");
+        button.innerText = "Add to Cart";
+        button.addEventListener("click", ()=>{
+            addtocart(el, index);
+        });
+
+        productBox.append(heading, img, name, price, rating, button);
+
+        document.getElementById("products").append(productBox);
     });
-    attachAddToCartEvents();
 }
-  
-function attachAddToCartEvents() {
-    const buttons = document.querySelectorAll('.add-to-cart-btn');
-    buttons.forEach(button => {
-      button.addEventListener('click', (event) => {
-        addToCart(event.target.dataset.id);
-      });
-    });
+
+let cart = [];
+function addtocart(el, index){
+
+    cart.push(el);
+    localStorage.setItem("cartData",JSON.stringify(cart));
+    console.log(cart);
+    getData();
 }
-  
-function addToCart(productId) {
-    const product = products.find(p => p.id == productId);
-    let cart = JSON.parse(localStorage.getItem('cart')) || [];
-    let existingProduct = cart.find(item => item.id == product.id);
-    if (existingProduct) {
-      existingProduct.quantity += 1;
-    } else {
-      product.quantity = 1;
-      cart.push(product);
-    }
-    localStorage.setItem('cart', JSON.stringify(cart));
-    alert(`${product.name} added to cart!`);
+
+function getData() {
+    let parsedData = JSON.parse(localStorage.getItem("cartData"));
+
+    console.log(parsedData);
 }
-  
-function sortAndFilterProducts() {
-    const sortOption = document.getElementById('sortOptions').value;
-    const filterOption = document.getElementById('categoryFilter').value;
-    const searchTerm = document.getElementById('searchBar').value.toLowerCase();
-  
-    let filteredProducts = products.filter(product => {
-      return (filterOption === 'all' || product.category === filterOption) &&
-             product.name.toLowerCase().includes(searchTerm);
-    });
-  
-    if (sortOption === 'lowToHigh') {
-      filteredProducts.sort((a, b) => a.price - b.price);
-    } else if (sortOption === 'highToLow') {
-      filteredProducts.sort((a, b) => b.price - a.price);
-    }
-  
-    displayProducts(filteredProducts);
-}
-  
-function goToCart() {
-    window.location.href = 'cart.html';
-}
-  
-document.addEventListener('DOMContentLoaded', () => {
-    displayProducts(products);
-});
-  
+
+showData(data);
