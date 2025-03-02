@@ -1,0 +1,126 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar {
+    background: linear-gradient(120deg, #010101, rgb(230, 0, 0));
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    align-items: center;
+    padding: 10px 20px;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+    font-size: large;
+    font-weight: 700;
+    font-style: normal;
+}
+
+#navbar .logo {
+    border-radius: 50%;
+    height: 80px;
+}
+
+nav {
+    display: flex;
+}
+
+nav a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: darkblue;
+    color: aliceblue;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    padding-right: 4rem;
+}
+
+.search-bar input[type="text"] {
+    padding: 6px;
+    border: 1px solid #ccc;
+    font-size: 17px;
+    border-radius: 4px;
+}
+
+.search-bar button {
+    padding: 6px 10px;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    color: white;
+}
+
+.search-img {
+    height: 1rem;
+}
+
+#sorting {
+    margin:  160px 20px 20px;
+}
+
+#sorting select {
+    margin-right: 10px;
+    padding: 6px;
+    border-radius: 4px;
+}
+
+#products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap : 2rem;
+    margin: 20px;
+}
+
+.product-box {
+    border: 1px solid rgb(116, 8, 8, 0.7);
+    text-align: center;
+    padding: 1.2rem;
+
+}
+
+.product-box img {
+    height: 19rem;
+    width: 100%;
+    object-fit:contain;
+}
+
+.product-box button {
+    width: 50%;
+    padding: 10px;
+    border: none;
+    background-color: azure;
+    color: black;
+    cursor: pointer;
+}
+
+.product-box button:hover {
+    transform: scale(1.1);
+    background-color: aquamarine;
+}
+
+footer {
+    background: linear-gradient(120deg, #010101, rgb(230, 0, 0));
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    padding: 20px;
+    justify-content: center;
+    font-size: large;
+    font-weight: 700;
+    font-style: normal;
+}

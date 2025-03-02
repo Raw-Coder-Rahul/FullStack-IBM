@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+    <header>
+        <div id="navbar">
+            <a href="index.html"><img src="imges/logo.jpg" alt="" class="logo"></a>
+            <nav class="nav">
+                <a href="#products" class="list heading">Shopping Cart</a>
+            </nav>
+            <div class="search-bar">
+                <form>
+                    <input type="text" id="search" placeholder="Search products...">
+                    <button><img src="imges/search.png" alt="" class="search-img"></button>
+                </form>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="cart-items"></div>
+        <p id="total-price"></p>
+        <button onclick="proceedToCheckout()" class="checkout">Proceed to Checkout</button>
+    </main>
+    <footer>
+        <p>&copy; 2025 Phenoix Store. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
+<script src="cart.js"></script>
