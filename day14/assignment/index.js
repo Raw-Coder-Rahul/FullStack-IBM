@@ -236,7 +236,7 @@ document.getElementById('sort').addEventListener('change', (e) => {
 document.getElementById('filter').addEventListener('change', (e) => {
   const value = e.target.value;
   let filteredData = [...data];
-  if (value !== 'all') {
+  if (value !== 'alls') {
     filteredData = data.filter(product => product.category === value);
   }
   showData(filteredData);

@@ -228,3 +228,25 @@ function getData() {
 }
 
 showData(data);
+
+let arr = JSON.parse(localStorage.getItem("cartData")) || [];
+
+function addtocart(el, index) {
+    for( let i = 0; i<arr.length;i++) {
+        if(arr[i].d == el.id) {
+            return alert('Data already exist');
+        }
+    }
+
+    arr.push(el);
+    localStorage.setItem("DataCart", JSON.stringify(arr));
+    alert("Data added to cart");
+}
+
+function deleteFun() {
+    console.log("Delete function is called");
+}
+
+function cartPage() {
+  window.location.href="cart.html";
+}
