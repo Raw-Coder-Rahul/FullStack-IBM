@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 14 Assignment</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="navbar">
+        <!-- <h2>Logo</h2> -->
+        <a href=""><img src="imges/logo.jpg" alt="" class="logo"></a>
+        <!-- <h2>Products</h2> -->
+        <nav class="nav">
+            <a href="#products" class="list">Home</a>
+            <a href="#" class="list">About</a>
+            <a href="#" class="list">Contact Us</a>
+            <a class="list" onclick="openCartPage()">Cart</a>
+        </nav>
+        <div class="search-bar">
+            <form>
+                <input type="text" id="search" placeholder="Search products...">
+                <button><img src="imges/search.png" alt="" class="search-img"></button>
+            </form>
+        </div>
+    </div>
+
+    <div id="sorting">
+        <select name="" id="sort">
+            <option value="select">Filter</option>
+            <option value="asc">Low to High</option>
+            <option value="dsc">High to Low</option>
+        </select>
+        
+        <select name="" id="filter">
+            <option name="alls" id="alls">All Categories</option>
+            <option name="Electronics" id="Electronics">Electronics</option>
+            <option name="Fashion" id="Fashion">Fashion</option>
+            <option name="Accessories" id="Accessories">Accessories</option>
+            <option name="Home" id="Home">Home & Kitchen</option>
+        </select>
+    </div>
+
+    <div id="products">
+
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Phenoix Store. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
+<script src="index.js"></script>
