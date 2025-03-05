@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="navbar">
+        <h2>Logo</h2>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">Products</a></li>
+                <li><a href="users.html">Users</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="sorting">
+        <input type="search" id="search" placeholder="Search users...">
+        <select id="sort">
+            <option value="select">Select</option>
+            <option value="nameAZ">Name: A-Z</option>
+            <option value="nameZA">Name: Z-A</option>
+        </select>
+    </div>
+    <div id="users"></div>
+    <div id="loading" style="display: none;">Loading...</div>
+    <script src="script.js"></script>
+</body>
+</html>
