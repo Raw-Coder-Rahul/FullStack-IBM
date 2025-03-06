@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav class="navbar">
+                <div class="nav-section nav-left">
+                    <button class="nav-button menu-button">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                    <a href="#" class="nav-logo">
+                        <img src="images/logo.webp" alt="Logo" class="logo-image">
+                        <h2 class="logo-text">YouTube<sup>IN</sup></h2>      
+                    </a>
+                </div>
+
+                <div class="nav-section nav-center">
+                    <form action="#" class="search-form">
+                        <input type="search" placeholder="Search" class="search-input" id="query" required>
+                        <button class="nav-button search-button">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </form>
+                    <button class="nav-button mic-button">
+                        <i class="fa-solid fa-microphone"></i>
+                    </button>
+                </div>
+
+                <div class="nav-section nav-right">
+                    <button class="nav-button theme-button">
+                        <i class="fa-solid fa-moon"></i>
+                    </button>
+                    <img src="images/user.jpg" alt="User Image" class="user-image">
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <div class="main-layout">
+                <aside class="sidebar">
+                    <div class="link-section">
+                        <a href="#" class="link-item">
+                            <i class="fa-solid fa-house"></i> Home
+                        </a>
+                        <a href="#" class="link-item">
+                            <i class="fa-solid fa-house"></i> Home
+                        </a>
+                        <a href="#" class="link-item">
+                            <i class="fa-solid fa-house"></i> Home
+                        </a>
+                    </div>
+                </aside>
+                <div class="content-wrapper">
+                    <div class="category-list">
+                        <button class="category-button active">All</button>
+                        <button class="category-button">Website</button>
+                        <button class="category-button">Gaming</button>
+                        <button class="category-button">Music</button>
+                        <button class="category-button">Coding</button>
+                        <button class="category-button">Cyber Security</button>
+                        <button class="category-button">Html</button>
+                        <button class="category-button">JavaScript</button>
+                        <button class="category-button">WordPress</button>
+                        <button class="category-button">Express.js</button>
+                        <button class="category-button">Stock Market</button>
+                        <button class="category-button">Trading</button>
+                        <button class="category-button">Forex Market</button>
+                        <button class="category-button">Finance</button>
+                    </div>
+
+                    <div class="video-list" id="lower-body">
+                        <div id="loading">
+                            Loading...
+                        </div>
+                        <a href="#" class="video-card">
+                            <div class="thumbnail-container">
+                                <img src="https://indiater.com/wp-content/uploads/2021/06/free-game-thumbnail-for-youtube-video-photoshop-template.jpg" alt="Thumbanil" class="thumbnail">
+                                <p class="duration">2:12:03</p>
+                            </div>
+                            <div class="video-info">
+                                <img src="https://img.freepik.com/premium-photo/gaming-logo-template_1029473-588479.jpg" alt="Channel Logo" class="icon">
+                                <div class="video-details">
+                                    <h2 class="title">Create a PUBG Mobile Type Game For Beginners</h2>
+                                    <p class="channel-name">Code Gammer</p>
+                                    <p class="views">557k Views • 2 days ago </p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="video-card">
+                            <div class="thumbnail-container">
+                                <img src="https://codewithcurious.com/wp-content/uploads/2024/08/thumbnail-2.png.webp" alt="Thumbanil" class="thumbnail">
+                                <p class="duration">6:10:23</p>
+                            </div>
+                            <div class="video-info">
+                                <img src="https://static.vecteezy.com/system/resources/previews/022/618/649/non_2x/html-js-css-icon-style-vector.jpg" alt="Channel Logo" class="icon">
+                                <div class="video-details">
+                                    <h2 class="title">Create a YouTube clone using Html Css JavaScript</h2>
+                                    <p class="channel-name">Web Coder</p>
+                                    <p class="views">1M Views •  3 month ago </p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="video-card">
+                            <div class="thumbnail-container">
+                                <img src="https://www.brokerxplorer.com/upload/thumbnail/2023-04/202304-article-scalping-or-swing-trading-which-one-to-choose-4280.jpg" alt="Thumbanil" class="thumbnail">
+                                <p class="duration">1:10:53</p>
+                            </div>
+                            <div class="video-info">
+                                <img src="https://static.vecteezy.com/system/resources/previews/007/371/777/non_2x/trading-financial-logo-trading-icon-candlestick-trading-trading-stock-symbol-market-chart-sign-vector.jpg" alt="Channel Logo" class="icon">
+                                <div class="video-details">
+                                    <h2 class="title">Scalping VS Swing Trading in Forex Market</h2>
+                                    <p class="channel-name">Trading Dragon</p>
+                                    <p class="views">777k Views • 10 days ago </p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="video-card">
+                            <div class="thumbnail-container">
+                                <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/make-money-online-trading-stocks-thumbnail-design-template-0c005589286d5206f26f56dcb3db4e7d_screen.jpg?ts=1624017276" alt="Thumbanil" class="thumbnail">
+                                <p class="duration">59:03</p>
+                            </div>
+                            <div class="video-info">
+                                <img src="https://static.vecteezy.com/system/resources/previews/007/371/777/non_2x/trading-financial-logo-trading-icon-candlestick-trading-trading-stock-symbol-market-chart-sign-vector.jpg" alt="Channel Logo" class="icon">
+                                <div class="video-details">
+                                    <h2 class="title">Learn Stock Market Easiest Way</h2>
+                                    <p class="channel-name">Stock Dragon</p>
+                                    <p class="views">55k Views • 12 days ago </p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="video-card">
+                            <div class="thumbnail-container">
+                                <img src="https://marketplace.canva.com/EAFCIbbrmCI/1/0/1600w/canva-simple-photocentric-music-mix-youtube-thumbnail-Wu7VIwDz-2U.jpg" alt="Thumbanil" class="thumbnail">
+                                <p class="duration">3:17:13</p>
+                            </div>
+                            <div class="video-info">
+                                <img src="https://thumbs.dreamstime.com/b/luxury-music-logo-design-golden-shiny-musical-emblem-vector-illustration-luxury-music-logo-design-golden-shiny-musical-emblem-111618781.jpg" alt="Channel Logo" class="icon">
+                                <div class="video-details">
+                                    <h2 class="title">Peaceful Sound</h2>
+                                    <p class="channel-name">Love Music</p>
+                                    <p class="views">10M Views • 6 years ago </p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="video-card">
+                            <div class="thumbnail-container">
+                                <img src="https://www.stockdaddy.in/_next/image?url=https%3A%2F%2Femt-stockdaddy-prod.s3.ap-south-1.amazonaws.com%2FPUBLIC%2FASSETS%2F1706853322530how%2520to%2520trade%2520in%2520stock%2520market%2520-%2520stockdaddy.jpg&w=1920&q=75" alt="Thumbanil" class="thumbnail">
+                                <p class="duration">1:40:30</p>
+                            </div>
+                            <div class="video-info">
+                                <img src="https://cdn.vectorstock.com/i/500p/56/94/bull-and-bear-symbols-stock-market-trends-vector-32005694.jpg" alt="Channel Logo" class="icon">
+                                <div class="video-details">
+                                    <h2 class="title">All-in-One Guide - The Complete Stock Market Tutorial</h2>
+                                    <p class="channel-name">Code Gammer</p>
+                                    <p class="views">85k Views • 3 weeks ago </p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="video-card">
+                            <div class="thumbnail-container">
+                                <img src="https://i.pinimg.com/564x/95/fa/9c/95fa9cb924c0dd8220e1dd6d760cdbe4.jpg" alt="Thumbanil" class="thumbnail">
+                                <p class="duration">3:20:03</p>
+                            </div>
+                            <div class="video-info">
+                                <img src="https://i.pinimg.com/474x/2c/d5/51/2cd5518d743fe43a393c88d573011a55.jpg" alt="Channel Logo" class="icon">
+                                <div class="video-details">
+                                    <h2 class="title">Gaming Guru - Ultimate Gaming Tips and Tricks</h2>
+                                    <p class="channel-name">Game Master</p>
+                                    <p class="views">2M Views • 5 years ago</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="video-card">
+                            <div class="thumbnail-container">
+                                <img src="https://i.ytimg.com/vi/1ZYbU82GVz4/maxresdefault.jpg" alt="Thumbanil" class="thumbnail">
+                                <p class="duration">4:10:35</p>
+                            </div>
+                            <div class="video-info">
+                                <img src="https://yt3.googleusercontent.com/dgYt6uF4lwtI6nS-3T7mN96zWrhEzb-GKF0Zl_mv3gINyPPs7YcwLKaS9GLyb0HT4kkOFCto=s900-c-k-c0x00ffffff-no-rj" alt="Channel Logo" class="icon">
+                                <div class="video-details">
+                                    <h2 class="title">Soothing Tunes - Beautiful Music for Work and Relaxation</h2>
+                                    <p class="channel-name">Harmony Haven</p>
+                                    <p class="views">15M Views • 6 years ago</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://www.youtube.com/embed/OkxiPuCj0hw?si=634F6QT0qu2Sj3Bt" class="video-card">
+                            <div class="thumbnail-container">
+                                <img src="https://img-c.udemycdn.com/course/750x422/3550884_2ce0.jpg" alt="Thumbanil" class="thumbnail">
+                                <p class="duration">1:30:50</p>
+                            </div>
+                            <div class="video-info">
+                                <img src="https://logos-world.net/wp-content/uploads/2023/02/JavaScript-Symbol.png" alt="Channel Logo" class="icon">
+                                <div class="video-details">
+                                    <h2 class="title">Coding for All - Master JavaScript from Scratch</h2>
+                                    <p class="channel-name">Code Ninja</p>
+                                    <p class="views">300k Views • 4 days ago</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="video-card">
+                            <div class="thumbnail-container">
+                                <img src="https://media.licdn.com/dms/image/v2/D4D12AQHgGVjO24Gw1Q/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1699328321375?e=2147483647&v=beta&t=1mg9Whi930lASQ4ait81gd3d7IHfZhnMzjDGeYgHQ0Q" alt="Thumbanil" class="thumbnail">
+                                <p class="duration">2:12:03</p>
+                            </div>
+                            <div class="video-info">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMoWH8JoEthS_G1hhbJBuxtt7iYIbDe9QTQQ&s" alt="Channel Logo" class="icon">
+                                <div class="video-details">
+                                    <h2 class="title">Cyber Safe - Top Tips for Cyber Security</h2>
+                                    <p class="channel-name">Cyber Guardian</p>
+                                    <p class="views">95k Views • 1 month ago</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
