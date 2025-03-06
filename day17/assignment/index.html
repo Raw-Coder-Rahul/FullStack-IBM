@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
-<body>
+<body class="sidebar-hidden">
     <div class="container">
         <header>
             <nav class="navbar">
@@ -34,6 +34,9 @@
                 </div>
 
                 <div class="nav-section nav-right">
+                    <button class="nav-button search-button">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
                     <button class="nav-button theme-button">
                         <i class="fa-solid fa-moon"></i>
                     </button>
@@ -44,17 +47,126 @@
 
         <main>
             <div class="main-layout">
+                <div class="screen-overlay"></div>
+
                 <aside class="sidebar">
-                    <div class="link-section">
-                        <a href="#" class="link-item">
-                            <i class="fa-solid fa-house"></i> Home
+                    <div class="nav-section nav-left">
+                        <button class="nav-button menu-button">
+                            <i class="fa-solid fa-bars"></i>
+                        </button>
+                        <a href="#" class="nav-logo">
+                            <img src="images/logo.webp" alt="Logo" class="logo-image">
+                            <h2 class="logo-text">YouTube<sup>IN</sup></h2>      
                         </a>
-                        <a href="#" class="link-item">
-                            <i class="fa-solid fa-house"></i> Home
-                        </a>
-                        <a href="#" class="link-item">
-                            <i class="fa-solid fa-house"></i> Home
-                        </a>
+                    </div>
+
+                    <div class="link-container">
+                        <div class="link-section">
+                            <a href="#" class="link-item">
+                                <i class="fa-solid fa-house"></i> Home
+                            </a>
+                            <a href="#" class="link-item">
+                                <i class="fa-solid fa-circle-play"></i> Shorts
+                            </a>
+                            <a href="#" class="link-item">
+                                <i class="fa-solid fa-money-bill"></i> Subscription
+                            </a>
+                        </div>
+                        <div class="section-separator"></div>
+
+                        <div class="link-section">
+                            <h4 class="section-title">You</h4>
+                            <a href="#" class="link-item">
+                                <i class="fa-solid fa-circle-user"></i> Your Channel
+                            </a>
+                            <a href="#" class="link-item">
+                                <i class="fa-solid fa-clock-rotate-left"></i> History
+                            </a>
+                            <a href="#" class="link-item">
+                                <i class="fa-brands fa-playstation"></i> Playlist
+                            </a>
+                            <a href="#" class="link-item">
+                                <i class="fa-brands fa-youtube"></i> Your Videos
+                            </a>
+                            <a href="#" class="link-item">
+                                <i class="fa-regular fa-clock"></i> Watch Later
+                            </a>
+                            <a href="#" class="link-item">
+                                <i class="fa-regular fa-thumbs-up"></i> Liked videos
+                            </a>
+                        </div>
+                        <div class="section-separator"></div>
+
+                        <div class="link-section">
+                            <h4 class="section-title">Explore</h4>
+                            <a href="#" class="link-item">
+                                <i class="fa-solid fa-meteor"></i> Trending
+                            </a>
+                            <a href="#" class="link-item">
+                                <i class="fa-solid fa-bag-shopping"></i> Shopping
+                            </a>
+                            <a href="#" class="link-item">
+                                <i class="fa-solid fa-music"></i> Music
+                            </a>
+                            <a href="#" class="link-item">
+                                <i class="fa-solid fa-clapperboard"></i> Films
+                            </a>
+                            <a href="#" class="link-item">
+                                <i class="fa-solid fa-podcast"></i> Live
+                            </a>
+                            <a href="#" class="link-item">
+                                <i class="fa-solid fa-gamepad"></i> Gaming
+                            </a>
+                            <a href="#" class="link-item">
+                                <i class="fa-solid fa-newspaper"></i> News
+                            </a>
+                            <a href="#" class="link-item">
+                                <i class="fa-solid fa-trophy"></i> Sport
+                            </a>
+                            <a href="#" class="link-item">
+                                <i class="fa-solid fa-graduation-cap"></i> Courses
+                            </a>
+                            <a href="#" class="link-item">
+                                <i class="fa-solid fa-shirt"></i> Fashion & beauty
+                            </a>
+                            <a href="#" class="link-item">
+                                <i class="fa-solid fa-tower-broadcast"></i> Prodcasts
+                            </a>
+                        </div>
+                        <div class="section-separator"></div>
+
+                        <div class="link-section">
+                            <h4 class="section-title">More from YouTube</h4>
+                            <a href="#" class="link-item">
+                                <i class="fa-brands fa-youtube"></i> YouTube Premium
+                            </a>
+                            <a href="#" class="link-item">
+                                <i class="fa-solid fa-circle-play"></i> YouTube Studio
+                            </a>
+                            <a href="#" class="link-item">
+                                <i class="fa-solid fa-headphones-simple"></i> YouTube Music
+                            </a>
+                            <a href="#" class="link-item">
+                                <i class="fa-brands fa-square-youtube"></i> YouTube Kids
+                            </a>
+                        </div>
+                        <div class="section-separator"></div>
+
+                        <div class="link-section">
+                            <a href="#" class="link-item">
+                                <i class="fa-solid fa-gear"></i> Settings
+                            </a>
+                            <a href="#" class="link-item">
+                                <i class="fa-solid fa-flag"></i> Report History
+                            </a>
+                            <a href="#" class="link-item">
+                                <i class="fa-regular fa-circle-question"></i> Help
+                            </a>
+                            <a href="#" class="link-item">
+                                <i class="fa-solid fa-triangle-exclamation"></i> Send feedback
+                            </a>
+                        </div>
+                        <div class="section-separator"></div>
                     </div>
                 </aside>
                 <div class="content-wrapper">
