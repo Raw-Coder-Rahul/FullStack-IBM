@@ -20,8 +20,8 @@ getData();
 
 async function showData(arr) {
     document.getElementById("loading").style.display="none";
-    arr.forEach(({snippet}) => {
-        let box = document.createElement("a");
+    arr.forEach(({snippet,id}) => {
+        let box = document.createElement("div");
         box.className="video-card";
 
         let img = document.createElement("img");
