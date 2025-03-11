@@ -18,6 +18,7 @@ async function showData(arr) {
 
         let id = document.createElement("p");
         id.innerText = el.id;
+        id.className = "id";
 
         let title = document.createElement("p");
         title.innerText = el.title;
@@ -30,11 +31,13 @@ async function showData(arr) {
         update.innerText = "Update";
         update.id = "update";
         update.addEventListener("click", async()=>{
-            gettitle();
+            let newTitle = prompt("Enter the new title : ",el.title);
+            if(newTitle != null) {
+                await gettitle(el.id, newTitle);
+            }
         });
 
         box.append(id, title, views, update);
-
         parent.append(box);
     });
 }
@@ -67,25 +70,32 @@ button.addEventListener("click", async()=>{
     }
 });
 
-
-async function gettitle() {
-    let value = document.getElementsByClassName("title").prompt();
+async function gettitle(id, value) {
     let obj = {
         title: value
-    }
+    };
+
     try {
-        let res = await fetch(`http://localhost:3000/posts:${id}`,{
+        let res = await fetch(`http://localhost:3000/posts/${id}`,{
         method:"PATCH",
         headers:{
-
                 "Content-Type": "application/json"
             },
             body: JSON.stringify(obj)
         });
         
-        let respnse = await res.json();
+        let response = await res.json();
         
-        if(respnse) {getData();
+        if(response) {
+            let titleElements = document.getElementsByClassName("title");
+            for (let i = 0; i < titleElements.length; i++) {
+                let parentElement = titleElements[i].parentElement;
+                let idElement = parentElement.getElementsByClassName("id")[0];
+                if (idElement.innerText === id) {
+                    titleElements[i].innerText = value;
+                    break;
+                }
+            }
             alert("Data saved Succesfully");
         }
     } catch (error) {
