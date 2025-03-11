@@ -1,0 +1,54 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "a title",
+      "views": 100
+    },
+    {
+      "id": "2",
+      "title": "another title",
+      "views": 200
+    },
+    {
+      "id": "9d42",
+      "title": "ram",
+      "views": 0.5388473813653676
+    },
+    {
+      "id": "518c",
+      "title": "ram",
+      "views": 32.39258736601318
+    },
+    {
+      "id": "b823",
+      "title": "ramtom king",
+      "views": 8.985370185085895
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "text": "a comment about post 1",
+      "postId": "1"
+    },
+    {
+      "id": "2",
+      "text": "another comment about post 1",
+      "postId": "1"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "SVU": [
+    {
+      "id": "1",
+      "text": "Nothing"
+    },
+    {
+      "id": "1",
+      "text": "Nothing2"
+    }
+  ]
+}
