@@ -37,7 +37,14 @@ async function showData(arr) {
             }
         });
 
-        box.append(id, title, views, update);
+        let Delete = document.createElement("button");
+        Delete.innerText = "Delete";
+        Delete.id = "Delete";
+        Delete.addEventListener("click", async()=>{
+                await getdelete(el.id);
+        });
+        
+        box.append(id, title, views, update, Delete);
         parent.append(box);
     });
 }
@@ -62,7 +69,8 @@ button.addEventListener("click", async()=>{
 
         let respnse = await res.json();
 
-        if(respnse) {getData();
+        if(respnse) {
+            getData();
             alert("Data saved Succesfully");
         }
     } catch (error) {
@@ -97,6 +105,29 @@ async function gettitle(id, value) {
                 }
             }
             alert("Data saved Succesfully");
+        }
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+async function getdelete(id) {
+    try {
+        let res = await fetch(`http://localhost:3000/posts/${id}`,{
+        method:"DELETE",
+        headers:{
+                "Content-Type": "application/json"
+            }
+        });
+        
+        let response = await res.json();
+        
+        if(response) {
+            let boxelements = document.getElementsByClassName("box");
+            Array.from(boxelements).forEach(boxelement=>{
+                boxelement.remove();
+            });
+            alert("Data removed Succesfully");
         }
     } catch (error) {
         console.log(error);
