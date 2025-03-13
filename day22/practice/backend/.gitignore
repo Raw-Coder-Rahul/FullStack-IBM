@@ -1,0 +1,7 @@
+package-lock.json
+node_modules/
+server.log
+.env
+.vscode/
+.idea/
+npm-debug.log
