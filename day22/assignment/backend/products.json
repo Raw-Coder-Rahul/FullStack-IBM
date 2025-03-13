@@ -16,5 +16,11 @@
     "name": "Product 3",
     "price": 300,
     "category": "Category 3"
+  },
+  {
+    "id": "a90bcf4e-90ea-4b5f-8184-cf7b6c81f234",
+    "name": "NoteBook",
+    "price": "$2",
+    "category": "Education"
   }
 ]
