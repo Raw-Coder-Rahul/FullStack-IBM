@@ -1,0 +1,7 @@
+node_modules/
+.log
+.tmp
+.bak
+.swp
+dist/
+build/

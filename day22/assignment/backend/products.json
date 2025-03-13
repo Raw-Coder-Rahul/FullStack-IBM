@@ -1,0 +1,20 @@
+[
+  {
+    "id": "1",
+    "name": "Alexa",
+    "price": "$10",
+    "category": "Robotics"
+  },
+  {
+    "id": "2",
+    "name": "Product 2",
+    "price": 200,
+    "category": "Category 2"
+  },
+  {
+    "id": "3",
+    "name": "Product 3",
+    "price": 300,
+    "category": "Category 3"
+  }
+]
