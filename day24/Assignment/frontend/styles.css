@@ -1,0 +1,74 @@
+body, h1, p, form, input, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #007bff, #4caf50);
+    color: #333;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+  
+/* Form Container */
+.container {
+    width: 100%;
+    max-width: 400px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+  
+/* Form Styling */
+form h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #007bff;
+}
+  
+form input {
+    display: block;
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+  
+form button {
+    width: 100%;
+    padding: 10px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+  
+form button:hover {
+    background: #0056b3;
+}
+  
+form p {
+    text-align: center;
+    margin-top: 10px;
+}
+  
+form a {
+    color: #007bff;
+    text-decoration: none;
+}
+  
+form a:hover {
+    text-decoration: underline;
+}
+  
