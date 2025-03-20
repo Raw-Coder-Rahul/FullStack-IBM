@@ -1,0 +1,9 @@
+node_modules/
+package-lock.json
+server.log
+.env
+.vscode/
+.log
+.tmp
+.bak
+.swp

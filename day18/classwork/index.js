@@ -1,4 +1,4 @@
-let API_KEY = "AIzaSyBzCv3mhhh48aEUr9BBt3PfUEUZ8Xk5UFA";
+let API_KEY = "";
 
 let lower_body = document.getElementById("lower-body");
 
@@ -12,7 +12,7 @@ async function getData() {
         console.log(res.items);
         showData(res.items);
     }catch(error) {
-        console.lof(error);
+        console.log(error);
     }
 }
 
