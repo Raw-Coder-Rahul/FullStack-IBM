@@ -7,3 +7,4 @@ server.log
 .tmp
 .bak
 .swp
+node_modules/

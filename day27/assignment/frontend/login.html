@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+</head>
+<body>
+    <div>
+        <h1 class="heading">Login</h1>
+        <form id="loginForm">
+            <div class="tabs">
+                <button type="button" class="tabButton active" onclick="showPanel('student')">Student</button>
+                <button type="button" class="tabButton" onclick="showPanel('admin')">Admin</button>
+            </div>
+            <div class="student panel">
+                <input type="email" id="studentEmail" placeholder="Enter your email" required>
+                <input type="password" id="studentPassword" placeholder="Enter your password" required>
+                <button type="submit" class="submit" >Login</button>
+            </div>
+            <div class="admin panel" style="display:none;">
+                <input type="email" id="adminEmail" placeholder="Enter your email" required>
+                <input type="password" id="adminPassword" placeholder="Enter your password" required>
+                <button type="submit" class="submit">Login</button>
+            </div> 
+        </form>
+        <p><a id="forgotPasswordLink" href="#">Forgot Password?</a></p>
+    </div>
+    
+    
+    <script src="index.js"></script>
+    
+</body>
+</html>
+<script src="login.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
